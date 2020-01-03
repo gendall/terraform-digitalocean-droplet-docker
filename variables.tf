@@ -5,7 +5,7 @@ variable "name" {
 
 variable "image" {
   type = string
-  default = "docker-18-04"
+  default = "debian-9-x64"
   description = "The server image to base this droplet on. Accepts a slug from the DigitalOcean API."
 }
 
