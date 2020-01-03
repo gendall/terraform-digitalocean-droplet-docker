@@ -16,3 +16,7 @@ module "manager_production" {
   tags    = ["production"]
 }
 ```
+
+## Deployment
+
+This role will be automatically built and deployed to [Terraform Registry](https://registry.terraform.io/modules/gendall) when a [Semver](https://semver.org) tag is pushed to the repo.

@@ -14,7 +14,7 @@ resource "digitalocean_droplet" "droplet" {
   monitoring = true
   
   lifecycle {
-    ignore_changes = ["tags"]
+    ignore_changes = [tags]
   }
 
   provisioner "remote-exec" {
