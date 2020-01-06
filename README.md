@@ -1,6 +1,6 @@
-# DigitalOcean Droplet SSH
+# DigitalOcean Droplet Docker
 
-A Terraform module that will create a DigitalOcean Droplet with sensible defaults and with the specified SSH key authorized.
+A Terraform module that will create a DigitalOcean Droplet with Docker installed and the specified SSH key authorized.
 
 ## Usage
 
@@ -10,7 +10,7 @@ provider "digitalocean" {
 }
 
 module "manager_production" {
-  source  = "gendall/droplet-ssh/digitalocean"
+  source  = "gendall/droplet-docker/digitalocean"
   name    = "skdadl-graph-manager"
   ssh     = "chatter"
   tags    = ["production"]
